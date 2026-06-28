@@ -9,17 +9,6 @@
       stop(); // stopt verdere uitvoering
     }
   })();
-</script><script>
-  const wachtwoord = "aab2026";
-
-  let invoer = prompt("Voer wachtwoord in:");
-
-  // trim haalt spaties weg
-  if (!invoer || invoer.trim() !== wachtwoord) {
-    alert("Onjuist wachtwoord");
-    document.body.innerHTML = "<h1>Geen toegang</h1>";
-    throw new Error("Access denied");
-  }
 </script>
 <!DOCTYPE html>
 <html lang="nl">
