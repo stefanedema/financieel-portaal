@@ -1,4 +1,15 @@
 <script>
+  (function() {
+    const wachtwoord = "aab2026";
+    const invoer = prompt("Voer wachtwoord in:");
+
+    if (!invoer || invoer.trim() !== wachtwoord) {
+      document.write("<h1 style='font-family:sans-serif;text-align:center;margin-top:40px;'>Geen toegang</h1>");
+      document.close();
+      stop(); // stopt verdere uitvoering
+    }
+  })();
+</script><script>
   const wachtwoord = "aab2026";
 
   let invoer = prompt("Voer wachtwoord in:");
