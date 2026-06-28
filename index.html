@@ -1,3 +1,13 @@
+<script>
+  const wachtwoord = "aab2026";
+
+  const invoer = prompt("Voer wachtwoord in:");
+
+  if (invoer !== wachtwoord) {
+    document.body.innerHTML = "<h1>Geen toegang</h1>";
+    throw new Error("Access denied");
+  }
+</script>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
